@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap");
+
+//;----------------MIXINS--------------------//
+
+@mixin smallbox {
+  width: $smallbox;
+  height: $smallboxheight;
+  background-color: $colsec;
+  border-radius: 0.5em;
+  box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.25);
+  color: $colprm;
+  font-weight: bolder;
+}
+
+@mixin bigbox {
+  width: $bigbox;
+  height: $bigboxheight;
+  background-color: $colsec;
+  border-radius: 1.5em;
+  border: none;
+  font-weight: bolder;
+  box-shadow: 9px 12px 18px rgba(63, 63, 63, 0.24);
+}
+
+@mixin placeholder {
+  color: $colprm;
+  font-size: 15px;
+  font-family: "Baloo 2", cursive;
+}
+//;----------------VARIABLES------------------//
+
+$colprm: #6969e4;
+$colsec: #d9baff;
+$smallbox: 100%;
+$smallboxheight: 1.5rem;
+
+$spacing: 0.5rem;
+
+$bigbox: 100%;
+$bigboxheight: 7rem;
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $colprm;
+  font-family: "Baloo 2", cursive;
+}
+
+//;----------------HEADER------------------//
+
+.header {
+  display: block;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  ul {
+    display: flex;
+    padding-inline-start: 0px;
+    list-style-type: none;
+    margin-block-end: 0em;
+    margin-block-start: 0em;
+    margin-inline-end: 0rem;
+  }
+  li {
+    img {
+      width: 50%;
+      height: 60%;
+    }
+    margin-bottom: auto;
+    margin-top: auto;
+    font-weight: bold;
+    text-align: center;
+    color: $colsec;
+    list-style-type: none;
+    padding: 1em;
+    span {
+      position: relative;
+      left: -40px;
+      font-size: 30px;
+    }
+  }
+}
+
+//;--------------------HERO---------------------//
+.hero {
+  //;--------------------MAIN SECTION---------------------//
+  .part1 {
+    position: relative;
+    top: -3rem;
+    div {
+      text-align: left;
+      text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    ul {
+      display: block;
+      padding: 2rem;
+      li {
+        //;--------------------INNER LIST---------------------//
+
+        ul {
+          display: flex;
+          padding: 0px;
+
+          li {
+            display: inline;
+            width: 50%;
+            padding: 0.5rem;
+
+            .Key {
+              display: flex;
+              ::placeholder {
+                @include placeholder();
+                padding-left: 0.5rem;
+              }
+              textarea {
+                @include smallbox();
+                border: none;
+                border-radius: 0.5em 0 0 0.5em;
+                margin-right: 0px;
+                margin-top: $spacing;
+                padding: 0;
+                padding-left: 0.3rem;
+                resize: none;
+              }
+
+              #help {
+                width: $smallboxheight;
+                background-color: $colsec;
+                z-index: 2;
+                border: none;
+                color: $colprm;
+                border-radius: 0 0.5rem 0.5rem 0;
+                padding: 0px;
+                font-weight: bolder;
+                display: inline;
+                margin-top: $spacing;
+                position: relative;
+              }
+              button:hover {
+                cursor: pointer;
+              }
+            }
+
+            .cipher_technique {
+              select {
+                @include smallbox();
+                border: none;
+                margin-top: $spacing;
+                padding-left: 0.5rem;
+              }
+            }
+          }
+        }
+
+        //;--------------------INNER LIST---------------------//
+
+        .Plaintext {
+          ::placeholder {
+            @include placeholder();
+            padding-left: 1rem;
+          }
+        }
+
+        textarea {
+          @include bigbox();
+          padding-top: 0.5rem;
+          padding-left: 0.5rem;
+          margin-top: $spacing;
+          resize: none;
+        }
+
+        .Cyphertext {
+          ::placeholder {
+            @include placeholder();
+            padding-left: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  //;--------------------LATER IMAGE---------------------//
+
+  .part2 {
+    z-index: 0;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  //;--------------------LATER IMAGE---------------------//
+
+  .part0 {
+    display: none;
+  }
+
+  //;--------------------LATER IMAGE---------------------//
+}
+
+.footer {
+  background-color: $colsec;
+  text-align: center;
+  color: $colprm;
+  padding: 1em;
+  font-weight: bolder;
+  ul {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    li {
+      padding: 0px;
+      display: inline-flex;
+      img {
+        height: 30px;
+        width: 30px;
+        display: inline-block;
+      }
+    }
+  }
+}
+//;---------------------MEDIA QUERY---------------------//
+
+@media only screen and (min-width: 550px) and (max-width: 900px) {
+  $smallboxheight: 2.5em;
+  $bigboxheight: 10rem;
+
+  @mixin smallbox {
+    height: $smallboxheight;
+  }
+
+  @mixin bigbox {
+    height: $bigboxheight;
+  }
+  .hero {
+    .part1 {
+      ul {
+        li {
+          ul {
+            li {
+              margin: 0px 0px;
+              .key {
+                margin: 0px;
+              }
+              .Key {
+                ::placeholder {
+                  padding-top: 0.4rem;
+                }
+                textarea {
+                  @include smallbox();
+                }
+                #help {
+                  @include smallbox();
+                }
+              }
+              .cipher_technique {
+                select {
+                  @include smallbox();
+                }
+              }
+            }
+          }
+          textarea {
+            @include bigbox();
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1100px) {
+  .hero {
+    display: grid;
+    align-items: center;
+    margin-bottom: 146px;
+    grid-template-columns: 50% auto;
+    ul {
+      margin-top: 1.5em;
+    }
+    .part2 {
+      display: none;
+    }
+    .part0 {
+      display: inline-flex;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1101px) and (max-width: 1600px) {
+  .hero {
+    display: grid;
+    grid-template-columns: 50% auto;
+    align-items: center;
+    margin-bottom: 146px;
+    ul {
+      margin-top: 1.5em;
+    }
+    .part2 {
+      display: none;
+    }
+    .part0 {
+      display: inline-flex;
+      position: relative;
+      left: -10em;
+      img {
+        width: 120%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1601px) and (max-width: 1950px) {
+  .hero {
+    display: grid;
+    grid-template-columns: 50% auto;
+    .part2 {
+      display: none;
+    }
+
+    .part0 {
+      padding: 5rem 0;
+      display: inline-flex;
+      position: relative;
+      left: -11.01em;
+      img {
+        width: 60.5em;
+        height: 40.5em;
+      }
+    }
+
+    .part1 {
+      padding: 5em 7em;
+      ul {
+        position: relative;
+        top: 1em;
+        li {
+          ul {
+            li {
+              .Key {
+                textarea {
+                  height: 3em;
+                }
+                ::placeholder {
+                  padding-top: 0.55rem;
+                }
+              }
+              #help {
+                height: 3em;
+              }
+
+              .cipher_technique {
+                select {
+                  height: 3em;
+                }
+              }
+            }
+          }
+
+          textarea {
+            height: 10rem;
+          }
+        }
+      }
+    }
+  }
+  .header {
+    ul {
+      padding: 0 8.5em;
+    }
+  }
+}

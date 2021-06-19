@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #6969e4;
+  font-family: "Baloo 2", cursive;
+}
+
+.header {
+  display: block;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  list-style-type: none;
+  -webkit-margin-after: 0em;
+          margin-block-end: 0em;
+  -webkit-margin-before: 0em;
+          margin-block-start: 0em;
+  -webkit-margin-end: 0rem;
+          margin-inline-end: 0rem;
+}
+
+.header li {
+  margin-bottom: auto;
+  margin-top: auto;
+  font-weight: bold;
+  text-align: center;
+  color: #d9baff;
+  list-style-type: none;
+  padding: 1em;
+}
+
+.header li img {
+  width: 50%;
+  height: 60%;
+}
+
+.header li span {
+  position: relative;
+  left: -40px;
+  font-size: 30px;
+}
+
+.hero .part1 {
+  position: relative;
+  top: -3rem;
+}
+
+.hero .part1 div {
+  text-align: left;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.hero .part1 ul {
+  display: block;
+  padding: 2rem;
+}
+
+.hero .part1 ul li ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px;
+}
+
+.hero .part1 ul li ul li {
+  display: inline;
+  width: 50%;
+  padding: 0.5rem;
+}
+
+.hero .part1 ul li ul li .Key {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero .part1 ul li ul li .Key ::-webkit-input-placeholder {
+  color: #6969e4;
+  font-size: 15px;
+  font-family: "Baloo 2", cursive;
+  padding-left: 0.5rem;
+}
+
+.hero .part1 ul li ul li .Key :-ms-input-placeholder {
+  color: #6969e4;
+  font-size: 15px;
+  font-family: "Baloo 2", cursive;
+  padding-left: 0.5rem;
+}
+
+.hero .part1 ul li ul li .Key ::-ms-input-placeholder {
+  color: #6969e4;
+  font-size: 15px;
+  font-family: "Baloo 2", cursive;
+  padding-left: 0.5rem;
+}
+
+.hero .part1 ul li ul li .Key ::placeholder {
+  color: #6969e4;
+  font-size: 15px;
+  font-family: "Baloo 2", cursive;
+  padding-left: 0.5rem;
+}
+
+.hero .part1 ul li ul li .Key textarea {
+  width: 100%;
+  height: 1.5rem;
+  background-color: #d9baff;
+  border-radius: 0.5em;
+  -webkit-box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.25);
+  color: #6969e4;
+  font-weight: bolder;
+  border: none;
+  border-radius: 0.5em 0 0 0.5em;
+  margin-right: 0px;
+  margin-top: 0.5rem;
+  padding: 0;
+  padding-left: 0.3rem;
+  resize: none;
+}
+
+.hero .part1 ul li ul li .Key #help {
+  width: 1.5rem;
+  background-color: #d9baff;
+  z-index: 2;
+  border: none;
+  color: #6969e4;
+  border-radius: 0 0.5rem 0.5rem 0;
+  padding: 0px;
+  font-weight: bolder;
+  display: inline;
+  margin-top: 0.5rem;
+  position: relative;
+}
+
+.hero .part1 ul li ul li .Key button:hover {
+  cursor: pointer;
+}
+
+.hero .part1 ul li ul li .cipher_technique select {
+  width: 100%;
+  height: 1.5rem;
+  background-color: #d9baff;
+  border-radius: 0.5em;
+  -webkit-box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.25);
+  color: #6969e4;
+  font-weight: bolder;
+  border: none;
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.hero .part1 ul li .Plaintext ::-webkit-input-placeholder {
+  color: #6969e4;
+  font-size: 15px;
+  font-family: "Baloo 2", cursive;
+  padding-left: 1rem;
+}
+
+.hero .part1 ul li .Plaintext :-ms-input-placeholder {
+  color: #6969e4;
+  font-size: 15px;
+  font-family: "Baloo 2", cursive;
+  padding-left: 1rem;
+}
+
+.hero .part1 ul li .Plaintext ::-ms-input-placeholder {
+  color: #6969e4;
+  font-size: 15px;
+  font-family: "Baloo 2", cursive;
+  padding-left: 1rem;
+}
+
+.hero .part1 ul li .Plaintext ::placeholder {
+  color: #6969e4;
+  font-size: 15px;
+  font-family: "Baloo 2", cursive;
+  padding-left: 1rem;
+}
+
+.hero .part1 ul li textarea {
+  width: 100%;
+  height: 7rem;
+  background-color: #d9baff;
+  border-radius: 1.5em;
+  border: none;
+  font-weight: bolder;
+  -webkit-box-shadow: 9px 12px 18px rgba(63, 63, 63, 0.24);
+          box-shadow: 9px 12px 18px rgba(63, 63, 63, 0.24);
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  margin-top: 0.5rem;
+  resize: none;
+}
+
+.hero .part1 ul li .Cyphertext ::-webkit-input-placeholder {
+  color: #6969e4;
+  font-size: 15px;
+  font-family: "Baloo 2", cursive;
+  padding-left: 1rem;
+}
+
+.hero .part1 ul li .Cyphertext :-ms-input-placeholder {
+  color: #6969e4;
+  font-size: 15px;
+  font-family: "Baloo 2", cursive;
+  padding-left: 1rem;
+}
+
+.hero .part1 ul li .Cyphertext ::-ms-input-placeholder {
+  color: #6969e4;
+  font-size: 15px;
+  font-family: "Baloo 2", cursive;
+  padding-left: 1rem;
+}
+
+.hero .part1 ul li .Cyphertext ::placeholder {
+  color: #6969e4;
+  font-size: 15px;
+  font-family: "Baloo 2", cursive;
+  padding-left: 1rem;
+}
+
+.hero .part2 {
+  z-index: 0;
+}
+
+.hero .part2 img {
+  width: 100%;
+  height: auto;
+}
+
+.hero .part0 {
+  display: none;
+}
+
+.footer {
+  background-color: #d9baff;
+  text-align: center;
+  color: #6969e4;
+  padding: 1em;
+  font-weight: bolder;
+}
+
+.footer ul {
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer ul li {
+  padding: 0px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.footer ul li img {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+}
+
+@media only screen and (min-width: 550px) and (max-width: 900px) {
+  .hero .part1 ul li ul li {
+    margin: 0px 0px;
+  }
+  .hero .part1 ul li ul li .key {
+    margin: 0px;
+  }
+  .hero .part1 ul li ul li .Key ::-webkit-input-placeholder {
+    padding-top: 0.4rem;
+  }
+  .hero .part1 ul li ul li .Key :-ms-input-placeholder {
+    padding-top: 0.4rem;
+  }
+  .hero .part1 ul li ul li .Key ::-ms-input-placeholder {
+    padding-top: 0.4rem;
+  }
+  .hero .part1 ul li ul li .Key ::placeholder {
+    padding-top: 0.4rem;
+  }
+  .hero .part1 ul li ul li .Key textarea {
+    height: 2.5em;
+  }
+  .hero .part1 ul li ul li .Key #help {
+    height: 2.5em;
+  }
+  .hero .part1 ul li ul li .cipher_technique select {
+    height: 2.5em;
+  }
+  .hero .part1 ul li textarea {
+    height: 10rem;
+  }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1100px) {
+  .hero {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 146px;
+    -ms-grid-columns: 50% auto;
+        grid-template-columns: 50% auto;
+  }
+  .hero ul {
+    margin-top: 1.5em;
+  }
+  .hero .part2 {
+    display: none;
+  }
+  .hero .part0 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  .hero .part0 img {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1101px) and (max-width: 1600px) {
+  .hero {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% auto;
+        grid-template-columns: 50% auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 146px;
+  }
+  .hero ul {
+    margin-top: 1.5em;
+  }
+  .hero .part2 {
+    display: none;
+  }
+  .hero .part0 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    position: relative;
+    left: -10em;
+  }
+  .hero .part0 img {
+    width: 120%;
+  }
+}
+
+@media only screen and (min-width: 1601px) and (max-width: 1950px) {
+  .hero {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% auto;
+        grid-template-columns: 50% auto;
+  }
+  .hero .part2 {
+    display: none;
+  }
+  .hero .part0 {
+    padding: 5rem 0;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    position: relative;
+    left: -11.01em;
+  }
+  .hero .part0 img {
+    width: 60.5em;
+    height: 40.5em;
+  }
+  .hero .part1 {
+    padding: 5em 7em;
+  }
+  .hero .part1 ul {
+    position: relative;
+    top: 1em;
+  }
+  .hero .part1 ul li ul li .Key textarea {
+    height: 3em;
+  }
+  .hero .part1 ul li ul li .Key ::-webkit-input-placeholder {
+    padding-top: 0.55rem;
+  }
+  .hero .part1 ul li ul li .Key :-ms-input-placeholder {
+    padding-top: 0.55rem;
+  }
+  .hero .part1 ul li ul li .Key ::-ms-input-placeholder {
+    padding-top: 0.55rem;
+  }
+  .hero .part1 ul li ul li .Key ::placeholder {
+    padding-top: 0.55rem;
+  }
+  .hero .part1 ul li ul li #help {
+    height: 3em;
+  }
+  .hero .part1 ul li ul li .cipher_technique select {
+    height: 3em;
+  }
+  .hero .part1 ul li textarea {
+    height: 10rem;
+  }
+  .header ul {
+    padding: 0 8.5em;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
